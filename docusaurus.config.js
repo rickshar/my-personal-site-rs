@@ -18,8 +18,10 @@ const config = {
   // FIXED: Update these to your own info for better deployment
   organizationName: 'rickshar', 
   projectName: 'my-personal-site-rs', 
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
 
   i18n: {
     defaultLocale: 'en',
