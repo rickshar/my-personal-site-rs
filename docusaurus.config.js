@@ -3,7 +3,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Personal Site',
+  title: 'Richard (Rick) Sharon',
   tagline: 'Technical Writing and Documentation',
   favicon: 'img/favicon.ico',
 
