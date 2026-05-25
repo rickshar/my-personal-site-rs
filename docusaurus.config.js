@@ -7,8 +7,10 @@ const config = {
   tagline: 'Technical Writing and Documentation',
   favicon: 'img/favicon.ico',
 
-  future: {
-    v4: true,
+  customFields: {
+    future: {
+      v4: true,
+    },
   },
 
   // FIXED: Removed the extra 'o' from .io
