@@ -5,7 +5,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Richard (Rick) Sharon',
   tagline: 'Technical Writing and Documentation',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/creative-writing.png',
 
   customFields: {
     future: {
@@ -63,7 +63,7 @@ const config = {
         title: 'My Site',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/creative-writing.png',
         },
         items: [
           {
