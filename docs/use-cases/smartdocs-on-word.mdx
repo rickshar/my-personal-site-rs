@@ -1,0 +1,60 @@
+---
+sidebar_position: 1
+---
+
+# Content Reuse and Single-Sourcing in Microsoft Word: The Tomia Case Study
+
+At Tomia, we produced all our raw content in Microsoft Word, and provided publsihed documentation in both PDF and HTML formats. Although this is was a very common single-sourcing implementation at the time, I would have liked to migrate the raw content to another more flexible source platform. However, there was no option to migrate to any other platform due to company policy. This documentation solution was not a great fit for our user guides because:
+
+* There was a lot of **content reuse** across the product lines.
+* **content variations** for each specific product had to be taken into account before publishing.
+
+While not technically impossible, managing this in Word is a huge undertaking, and Word is not the most stable documentation publishing platform. This led me to search for a tool that could emulate a single-sourcing workflow in Word. In such a system, the foundational mechanics used to maximize content reuse and manage variations are **snippets** and **conditions**.
+
+## Core Definitions
+
+* **Snippet** (sometimes called a partial, reuse topic, or conref): A discrete, reusable block of content stored in a single source file and referenced across multiple documentation pages.
+* **Condition** (often referred to as conditional text or conditional filtering): A mechanism used to show or hide specific content based on the target audience, product variant, deployment model, or output format.
+
+## Discovering a Solution
+
+On a visit to a conference in Jerusalem in 2010, I attended a presentation of **SmartDocs**, a product I had not previously heard about. 
+
+SmartDocs is an add-in for Microsoft Word that enables you to:
+
+1. Reuse snippets across your documentation guides.
+2. Set up variables and conditions that you can employ inside or outside of snippets.
+
+## Implementation Challenges
+
+In setting up this system, we faced several challenges.
+
+### Content Granularity
+
+The primary challenge was deciding the **granularity of the snippets**. We did not want to have to aggregate too many snippets when creating new documentation, as this might make maintenance difficult in the future.
+
+**The Outcome:** After some trial-and-error runs, we realized that it was better to have larger snippets, even if that meant they included many conditions.
+
+### Content Variations
+
+The second challenge was managing the content variations. We had to decide how to structure the conditions and variables to ensure that the correct content was displayed for each product variant. This required careful planning and organization to avoid confusion and ensure that the documentation was accurate and consistent.
+Conditions were set up to filter content based on the product variant, and variables were used to manage common information that needed to be updated across multiple snippets.
+Each condition was represented by a color applied to the content and named for the product variant it represented. This made it easier to identify and manage the variations within the snippets. However, there were several limitations:
+* The conditions were not hierarchical, which meant that we had to be careful when applying them to ensure that the correct content was displayed.
+* The palette of seven colors was not large enough to cover all of our products, and if two or more colors were applied to the same content, it displayed as purple. This meant that you could not immediately see which conditions were applied to the content.
+* Several of the available colors were quite dark and made it difficult to read the content when they were applied. This was a significant issue, as it impacted the readability of the documentation in edit mode, which is where the writers spent most of their time.
+
+We had to implement a system for naming the conditions and using the color palette strategically to manage these limitations. For example, we used lighter colors for conditions applied to products with the most specific content and reserved darker colors for conditions applied to products with less specific content. We also implemented a naming system that made it clear which product variant each condition represented, which helped reduce confusion.
+
+We asked 36 Software to expand the color palette with lighter hues, and make it hierarchical, and they implemented these features in a later version of SmartDocs. This was a significant improvement because it made it easier to manage content variations and improved the readability of the documentation in edit mode.
+
+We did not encounter any issues with the variables feature.
+
+### Linking Word Files
+
+Although Word has a Master Document feature that allows you to link multiple Word files together as in a book, we found that it was not a stable solution for our documentation needs. The Master Document feature can be prone to corruption and can cause issues with formatting and content management. As a result, we decided to avoid using this feature and instead focused on making sure that we could apply snippets across the files with bookmarks and references to those bookmarks with complete integrity. To overcome Word's rebuilding numerical reference codes every time a snippet is referenced from one file to another, or even within the same file, we needed to ensure that any bookmarks were explicitely named throughout the files, and that the same name was used in the snippet and in the referencing content. This allowed us to maintain the integrity of the references and avoid issues with broken links or corrupted files.
+
+
+
+
+Overall, while there were challenges in implementing the single-sourcing system in Microsoft Word using SmartDocs, we were able to overcome them through careful planning and organization. Using snippets and conditions allowed us to maximize content reuse and manage variations effectively, which ultimately improved the efficiency and consistency of our documentation process.
