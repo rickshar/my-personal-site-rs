@@ -7,7 +7,7 @@ tags: [hello, docusaurus]
 
 # AI and Me
 
-I have been actively following the development of AI since 2023. 
+I have been actively following the development of AI since 2023...
 
 {/* truncate */}
 
@@ -84,7 +84,7 @@ For this reason, building a prompt is an iterative process. The prompt may under
 ### A Simple Prompt Layout
 
 1. **First part:** Describe the overall task and required outcome in a sentence.
-2. **Second part:** Break down the task into sequential steps.
+2. **Second part:** If necessary, break down the task into sequential steps and provide detailed instructions for each step. Otherwise, if a sequence does not apply, provide general instructions. Be as specific as possible to avoid ambiguity.
 3. **Third part:** List any restrictions or limitations to apply. Add anything you can think of.
 4. **Fourth part:** Request a report with the current (updated) prompt and a list of the completed tasks.
 
@@ -103,7 +103,82 @@ Much of the resulting information might not be accurate or might be false. After
 
 I did present such a first draft to a product manager who was amazed about the new capabilities of feature X, as described by the AI tool. We held a discussion with the relevant developers and discovered that only 70% of these capabilities were real, and that the rest were hallucinations, which might have been good ideas in relation to future expansion of the feature, but were certainly not relevant or existent in the current product about to be rolled out.
 
-## Conversations With Your AI Tool
+Here's another example: Over time, our documentation repository had become inconsistent with regards to the heading case. Some contributors has used title case and some had used sentence case. We decided to go with Chicago title case. In the AI tool era, this should require just a simple prompt to run through all the headings and fix or leave as required. However, it is not as simple as it sounds. The prompt needs to be very specific and include all the instructions and restrictions, and it needs to be tested on a small section of the repository before being applied more broadly.
+
+The prompt for the task was as follows:
+
+```bash
+
+Search all H1, H2, H3, and H4 headings in markdown files (x.md) under [path to the docs directory] in the [c:\repos\my-documentation] repository. Include all subdirectories. Exclude H5 and H6 headings. A heading written as a question is still a heading.
+
+If a heading is in sentence case, convert it to Chicago-style title case. If a heading is already in title case but not in Chicago title case, normalize it to Chicago title case. Do not change any other content. 
+Use sub-agents for speed and efficiency because this is a large documentation set.
+
+These are the Chicago title case rules to follow:
+
+**First and Last Words**
+- Capitalize always, regardless of the part of speech.
+- Example: *How to Write **Well***, *The Great Gatsby*.
+
+**Major Parts of Speech**
+- Capitalize nouns, pronouns, verbs (including short ones like *is, are, be*), adjectives, and adverbs.
+- Example: *Why Technology **Matters***.
+
+**Subordinating Conjunctions**
+- Capitalize words that link an independent and dependent clause.
+- Examples: *If, Because, Although, Unless, While*.
+
+**Articles**
+- Lowercase *a, an, the* unless they are the first or last word.
+
+**Coordinating Conjunctions**
+- Lowercase *and, but, for, or, nor*.
+
+**Prepositions**
+- Lowercase all prepositions, no matter how long they are.
+- Examples: *with, from, about, through, between*.
+
+**The Words *to* and *as***
+- Lowercase *to* in prepositions and infinitives.
+- Lowercase *as* in all grammatical functions.
+
+**Phrasal Verbs**
+- Capitalize the particle when it is part of a verb phrase.
+- Examples: *Setting **Up***, *Logging **In** and **Out***.
+
+**After a Colon**
+- Capitalize the first word of a subtitle.
+- Example: *Docs-as-Code: **A** Complete Guide*.
+
+**Hyphenated Compounds**
+- Capitalize both words unless the second part is a modifier or prefix that cannot stand alone.
+- Examples: *High-Quality Docs*, *Anti-inflammatory*.
+
+These are the restrictions to apply:
+
+**Do not change any content other than headings H1, H2, H3, H4.**
+
+**Title-Case Rule Exceptions for Product Names and Technology Acronyms**
+- List of product names and other acronyms that should be capitalized in title case, 
+even if they do not follow the standard rules:[list of product names and acronyms for our products and technology terms].
+
+For example, if a heading contains the product name "Azure" or the acronym "API", 
+these should be capitalized in title case regardless of their position in the heading.
+
+Create a report with the updated prompt and a list of the completed tasks, 
+including any exceptions encountered and how they were handled. 
+List the regex patterns used to identify the headings and apply the title case rules correctly. 
+If any files were skipped due to formatting issues, include those in the report as well.
+
+```
+
+In the case of this example, the AI tool ran through all the markdown files in the specified directory and subdirectories, identified all H1, H2, H3, and H4 headings, and applied the Chicago title case rules while respecting the specified exceptions for product names and acronyms. The tool generated an exhaustive report summarizing the changes made to the headings and any exceptions that were encountered during the process.
+
+There were issues due to way the repository was structured, and the fact that some files were not properly formatted. The AI tool handled these exceptions by skipping over files that did not meet the criteria and logging them in the report for further review.
+
+By the way, if you are wondering how to write a prompt for a task like this, you can ask your AI tool to write the prompt for you. You can provide it with the instructions and restrictions, and ask it to format them in a clear and concise manner. This can save you time and ensure that the prompt is well-structured and easy to understand.
+
+## Conversations with Your AI Tool
 
 The best way to work with an AI tool is to have a conversation with it as if were human. This means that you can ask it questions, provide feedback, and give it additional instructions as needed.
 
