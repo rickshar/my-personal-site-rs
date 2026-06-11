@@ -8,6 +8,7 @@ const config = {
   favicon: 'img/creative-writing.png',
 
   customFields: {
+    taglineDescription: 'I write clear technical documentation: User and Administration Guides, Onboarding Guides, Product Overviews, White Papers, Online Web Help, API User Guides, Installation, Operation, and Maintenance Guides, Integration and deployment Guides, Troubleshooting Guides, Release Notes.',
     future: {
       v4: true,
     },
@@ -87,8 +88,17 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Documentation',
                 to: '/docs/intro',
+              },
+            ],
+          },
+          {
+            title: 'Feedback',
+            items: [
+              {
+                label: 'Email-richardsharonthfc@gmail.com',
+                href: 'mailto:richardsharonthf@gmail.com',
               },
             ],
           },

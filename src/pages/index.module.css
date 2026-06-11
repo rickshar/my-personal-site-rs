@@ -21,3 +21,17 @@
   align-items: center;
   justify-content: center;
 }
+
+.taglineBlock {
+  margin-top: 1rem;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.taglineText {
+  color: var(--ifm-color-primary-contrast);
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin: 0;
+}

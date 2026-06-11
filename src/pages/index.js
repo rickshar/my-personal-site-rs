@@ -15,7 +15,16 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle"><strong>{siteConfig.tagline}</strong></p>
+        {siteConfig.customFields?.taglineDescription && (
+          <div className={styles.taglineBlock}>
+            <p className={styles.taglineText}>
+              {siteConfig.customFields.taglineDescription}
+            </p>
+          </div>
+        )}
+
+        {/* Commented out the About Me button per request
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
@@ -23,6 +32,7 @@ function HomepageHeader() {
             About Me ⏱️
           </Link>
         </div>
+        */}
       </div>
     </header>
   );
