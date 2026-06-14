@@ -1,15 +1,16 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
+import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'My Portfolio',
+    imgUrl: require('@site/static/img/folder-portfolio.png').default,
+    to: '/docs/portfolio/intro',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        You can take a look at my portfolio and experience. It includes documentation for products I've worked on, such as Flexera's Ocean, Forescout's Platform, and Tomia's Sparx. Each section provides insights into my contributions and the impact of these products in the industry.
       </>
     ),
   },
@@ -35,11 +36,25 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Svg, imgUrl, title, description, to}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        {to ? (
+          <Link to={to}>
+            {imgUrl ? (
+              <img src={imgUrl} className={styles.featureSvg} role="img" alt={title} />
+            ) : (
+              <Svg className={styles.featureSvg} role="img" />
+            )}
+          </Link>
+        ) : (
+          imgUrl ? (
+            <img src={imgUrl} className={styles.featureSvg} role="img" alt={title} />
+          ) : (
+            <Svg className={styles.featureSvg} role="img" />
+          )
+        )}
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
