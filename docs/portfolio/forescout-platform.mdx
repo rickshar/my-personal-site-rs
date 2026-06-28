@@ -18,7 +18,7 @@ Major contributions to these guides from Version 8.2 to Version 8.4.3:
 
 ## Plugin Documentation
 
-I contributed to the documentation of a wide range of plugins, and created initial versions for the following:
+I contributed to the documentation of a wide range of plugins and created initial versions for the following:
 
 * [Endpoint Visibility Behind NAT/SASE How-To Guide for V8.4](https://docs.forescout.com/bundle/endpt-vis-nat-sase-8-4-htg/page/c-zscaler-htg-introduction-to-zscaler.html "Endpoint Visibility Behind NAT/SASE How-To Guide for V8.4")
 
@@ -30,30 +30,28 @@ I contributed to the documentation of a wide range of plugins, and created initi
 
 * [Upgrade Verifier Plugin](https://docs.forescout.com/bundle/upgrade-verifier-plugin/page/about-the-upgrade-verifier-plugin.html "Upgrade Verifier Plugin")
 
-* [Forescout Cloud Multifactor Risk Scoring Service How-to Guide](https://docs.forescout.com/bundle/forescout-cloud-risk-scoring/page/c-risk-scoring-assessment.html "Risk Scoring").
+* [Forescout Cloud Multifactor Risk Scoring Service How-to Guide](https://docs.forescout.com/bundle/forescout-cloud-risk-scoring/page/c-risk-scoring-assessment.html "Risk Scoring")
 
-##  Content Conversion Project (Microsoft Word to DITA)
+## Content Conversion Project (Microsoft Word to DITA)
 
 During my stay at Forescout, we converted our content from Microsoft Word to DITA. I played a part in the following tasks:
 
-* Selecting a target documentation tool and platform: I presented and tested several candidate tools to the team. We decided to go with [Heretto](https://www.heretto.com/ "Heretto") (previously known as EasyDita). Heretto is a Component Content Management System (CCMS). We liked the user-friendly interface, the native, non-proprietary DITA support, and smooth integration with our [Zoomin](https://docs.zoominsoftware.com/bundle/ZP/page/zoomin_platform.html "Zoomin Platform") documentation portal. Later, we obtained licenses for [Oxygen XML Editor](https://www.oxygenxml.com/xml_editor/dita_editor.html "Oxygen XML Editor") and connected Heretto to Oxygen via WebDAV, which enabled us to exploit Oxygen's more advanced XML manipulation, custom scripting and offline editing.
+* Selecting a target documentation tool and platform: I presented and tested several candidate tools to the team. We decided to go with [Heretto](https://www.heretto.com/ "Heretto") (previously known as EasyDita). Heretto is a Component Content Management System (CCMS). We liked the user-friendly interface, the native, non-proprietary DITA support, and smooth integration with our [Zoomin](https://docs.zoominsoftware.com/bundle/ZP/page/zoomin_platform.html "Zoomin Platform") documentation portal. Later, we obtained licenses for [Oxygen XML Editor](https://www.oxygenxml.com/xml_editor/dita_editor.html "Oxygen XML Editor") and connected Heretto to Oxygen via WebDAV, which enabled us to exploit Oxygen's more advanced XML manipulation, custom scripting, and offline editing.
 
-* Heavy-lifting after initial conversion: Our contractor converted content from our previous system, which consisted of over 2,000 pages, much of it legacy documentation, and contained:
+* Heavy lifting after initial conversion: Our contractor converted content from our previous system, which consisted of over 2,000 pages of legacy documentation and contained:
 
-	* Word Garbage remaining after initial conversion,
-    * Word variables.
-	* Simple snippets of reused content, mainly in the form of admonitions or partial sub-sections of procedures, such as the first three steps repeated in many procedures.
-	* Sizable sections of information shared between different plugins within a plugin family, which differed from one another due to specific deviations for a given plugin. New documentation for such plugins had been created by "Save As."
-
+	* Word garbage remaining after initial conversion
+	* Word variables
+	* Simple snippets of reused content, mainly in the form of admonitions or partial sub-sections of procedures, such as the first three steps repeated in many procedures
 The sections in the Word files were not constrained to a strict information typing, but we managed to apply labels to sections prior to conversion according to whether they were conceptual, task-oriented, or reference information. We wanted to apply DITA information architecture templates in Heretto from the start.
 
 The conversion engine was able to discern similar or identical sections by giving the section a Reuse Score. If the score for a section was 98% or 99%, then we could assume it was a good candidate for creating a reusable snippet in Heretto. However, such reusables often contained conceptual, task-oriented, and reference information, and needed to be broken down into their constituents before importing to Heretto.
 
-The heavy-lifting was estimated to take several months, so each of the 10 writers needed to continue to work in Word and make sure they logged their changes during this time.
+The heavy lifting was estimated to take several months, so each of the 10 writers had to continue working in Word and ensure they logged their changes during this time.
 
 If AI had arrived two years earlier, the turnaround time could have been considerably shortened, as I discovered in later conversion projects. We could have done much of this quite easily using prompts.
 
-Converting the raw material was a multi-stage process, partially built on scripts, and partially on manual procedures. This included both adding artifacts needed for Heretto and removing garbage that was exported from Word.
+Converting the raw material was a multi-stage process, partially built on scripts and partially on manual procedures. This included both adding artifacts needed for Heretto and removing garbage that was exported from Word.
 
 
   

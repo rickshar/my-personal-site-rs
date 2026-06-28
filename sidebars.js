@@ -16,7 +16,6 @@
  */
 const sidebars = {
   tutorialSidebar: [
-    'intro',
     {
       type: 'category',
       label: 'About Me',

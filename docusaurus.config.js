@@ -68,10 +68,9 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            to: '/docs/about-me/intro',
+            label: 'About Me',
             position: 'left',
-            label: 'Overview',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -89,7 +88,7 @@ const config = {
             items: [
               {
                 label: 'Documentation',
-                to: '/docs/intro',
+                to: '/docs/about-me/intro',
               },
             ],
           },
