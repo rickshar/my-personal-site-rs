@@ -1,0 +1,10 @@
+{
+  "label": "Writing Methodology",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "title": "Writing Methodology",
+    "description": "How I approach technical writing, research, and documentation workflows.",
+    "slug": "/docs/writing-methodology"
+  }
+}

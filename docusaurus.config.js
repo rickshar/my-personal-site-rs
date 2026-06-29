@@ -8,7 +8,7 @@ const config = {
   favicon: 'img/creative-writing.png',
 
   customFields: {
-    taglineDescription: 'I write clear technical documentation: User and Administration Guides, Onboarding Guides, Product Overviews, White Papers, Online Web Help, API User Guides, Installation, Operation, and Maintenance Guides, Integration and deployment Guides, Troubleshooting Guides, Release Notes.',
+    taglineDescription: 'I write technical documentation for User and Administration Guides, Onboarding Guides, Product Overviews, White Papers, Online Web Help, API User Guides, Installation, Operation, and Maintenance Guides, Integration and deployment Guides, Troubleshooting Guides, Release Notes.',
     future: {
       v4: true,
     },
@@ -73,11 +73,13 @@ const config = {
             position: 'left',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {
+          
+          /*{
             href: 'https://github.com/rickshar/my-personal-site-rs',
             label: 'GitHub',
             position: 'right',
-          },
+          },*/
+          
         ],
       },
       footer: {

@@ -20,17 +20,17 @@ const FeatureList = [
     to: '/docs/faq/faq-index',
     description: (
       <>
-        This FAQ lists....
+        Here are some frequently asked questions. If you want to ask me something, send me feedback to the email address at the bottom of this page.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'A Writing Methodology',
+    imgUrl: require('@site/static/img/writing-methodology.png').default,
+    to: `/docs/writing-methodology/methodology-intro`,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        This is how I approach a problem and execute a project from start to finish.
       </>
     ),
   },
