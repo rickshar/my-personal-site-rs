@@ -38,12 +38,12 @@ During my stay at Forescout, we converted our content from Microsoft Word to DIT
 
 * Selecting a target documentation tool and platform: I presented and tested several candidate tools to the team. We decided to go with [Heretto](https://www.heretto.com/ "Heretto") (previously known as EasyDita). Heretto is a Component Content Management System (CCMS). We liked the user-friendly interface, the native, non-proprietary DITA support, and smooth integration with our [Zoomin](https://docs.zoominsoftware.com/bundle/ZP/page/zoomin_platform.html "Zoomin Platform") documentation portal. Later, we obtained licenses for [Oxygen XML Editor](https://www.oxygenxml.com/xml_editor/dita_editor.html "Oxygen XML Editor") and connected Heretto to Oxygen via WebDAV, which enabled us to exploit Oxygen's more advanced XML manipulation, custom scripting, and offline editing.
 
-* Heavy lifting after initial conversion: Our contractor converted content from our previous system, which consisted of over 2,000 pages of legacy documentation and contained:
+* Our contractor converted over 2000 pages of Word content from the current published version of the platform and components. Howerver, there was still much heavy-lifting to do, due to:
 
 	* Word garbage remaining after initial conversion
 	* Word variables
 	* Simple snippets of reused content, mainly in the form of admonitions or partial sub-sections of procedures, such as the first three steps repeated in many procedures
-The sections in the Word files were not constrained to a strict information typing, but we managed to apply labels to sections prior to conversion according to whether they were conceptual, task-oriented, or reference information. We wanted to apply DITA information architecture templates in Heretto from the start.
+	* The sections in the Word files were not constrained to a strict information type, but we managed to apply labels to sections prior to conversion according to whether they were conceptual, task-oriented, or reference information. We wanted to apply DITA information architecture templates in Heretto from the start.
 
 The conversion engine was able to discern similar or identical sections by giving the section a Reuse Score. If the score for a section was 98% or 99%, then we could assume it was a good candidate for creating a reusable snippet in Heretto. However, such reusables often contained conceptual, task-oriented, and reference information, and needed to be broken down into their constituents before importing to Heretto.
 
