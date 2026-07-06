@@ -109,11 +109,7 @@ const config = {
               {
                 label: 'Blog',
                 to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/rickshar/my-personal-site-rs',
-              },
+              },              
             ],
           },
         ],
