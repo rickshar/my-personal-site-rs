@@ -53,6 +53,8 @@ const config = {
     ],
   ],
 
+  plugins: ['@easyops-cn/docusaurus-search-local'],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -73,6 +75,10 @@ const config = {
             position: 'left',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            type: 'search',
+            position: 'right',
+          },
           
           /*{
             href: 'https://github.com/rickshar/my-personal-site-rs',
