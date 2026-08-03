@@ -27,13 +27,19 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
+          cache: yarn
+          cache-dependency-path: yarn.lock
 
       - name: Install dependencies
-        run: npm ci
+        run: |
+          corepack enable
+          yarn install --frozen-lockfile
 
       - name: Build website
-        run: npm run build
+        run: yarn build
+
+      - name: Verify build output
+        run: test -d build && test -f build/index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -42,6 +48,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: build
+          if-no-files-found: error
 
   deploy:
     name: Deploy to GitHub Pages
