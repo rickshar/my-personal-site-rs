@@ -26,16 +26,18 @@ This command generates static content into the `build` directory and can be serv
 
 ## Deployment
 
-Using SSH:
+This repository is configured to publish to GitHub Pages through GitHub Actions.
+
+When changes are pushed to the `main` branch, the workflow in [.github/workflows/deploy.yml](.github/workflows/deploy.yml) will build the site and deploy it automatically.
+
+To enable it in GitHub:
+
+1. Open your repository Settings → Pages.
+2. Set the source to GitHub Actions.
+3. Push to `main` to trigger the deployment.
+
+For local builds, use:
 
 ```bash
-USE_SSH=true yarn deploy
+npm run build
 ```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
