@@ -9,3 +9,22 @@
   height: 200px;
   width: 200px;
 }
+
+/* Left-justify specific feature description while container remains centered */
+.leftJustify {
+  display: block;
+  text-align: left;
+}
+
+/* Hover/click affordance for linked feature icons */
+:global(.text--center) a .featureSvg {
+  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+  cursor: pointer;
+}
+:global(.text--center) a:hover .featureSvg,
+:global(.text--center) a:focus-visible .featureSvg {
+  transform: translateY(-6px) scale(1.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  /* stronger visible tint on hover */
+  filter: saturate(1.3) brightness(1.08) hue-rotate(12deg);
+}

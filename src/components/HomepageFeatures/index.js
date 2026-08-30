@@ -10,7 +10,9 @@ const FeatureList = [
     to: '/docs/portfolio/intro',
     description: (
       <>
-        You can take a look at my portfolio and experience. It includes documentation for products I've worked on, such as Flexera's Ocean, Forescout's Platform, and Tomia's Sparx. Each section provides insights into my contributions and the impact of these products in the industry.
+        <span className={styles.leftJustify}>
+          You can take a look at my portfolio and experience. It includes documentation for products I've worked on, such as Flexera's Ocean, Forescout's Platform, and Tomia's Sparx. Each section provides insights into my contributions and the impact of these products in the industry.
+        </span>
       </>
     ),
   },
@@ -20,17 +22,21 @@ const FeatureList = [
     to: '/docs/faq/faq-index',
     description: (
       <>
-        Here are some frequently asked questions. If you want to ask me something, send me feedback to the email address at the bottom of this page.
+        <span className={styles.leftJustify}>
+          Here are some frequently asked questions. If you want to ask me something, send me feedback to the email address at the bottom of this page.
+        </span>
       </>
     ),
   },
   {
-    title: 'A Writing Methodology',
+    title: 'Writing Methodology',
     imgUrl: require('@site/static/img/writing-methodology.png').default,
     to: `/docs/writing-methodology/methodology-intro`,
     description: (
       <>
-        This is how I approach a problem and execute a project from start to finish.
+        <span className={styles.leftJustify}>
+          This is how I approach a problem and execute a project from start to finish.
+        </span>
       </>
     ),
   },

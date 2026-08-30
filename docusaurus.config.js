@@ -8,7 +8,7 @@ const config = {
   favicon: 'img/creative-writing.png',
 
   customFields: {
-    taglineDescription: 'I write technical documentation for User and Administration Guides, Onboarding Guides, Product Overviews, White Papers, Online Web Help, API User Guides, Installation, Operation, and Maintenance Guides, Integration and deployment Guides, Troubleshooting Guides, Release Notes.',
+    taglineDescription: 'I write technical documentation for user and administration Guides, onboarding guides, product overviews, white papers, online web help, API user guides, installation, operation, and maintenance guides, integration and deployment guides, troubleshooting guides, and release notes.',
     future: {
       v4: true,
     },

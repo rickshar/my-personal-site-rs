@@ -34,4 +34,7 @@
   font-size: 1.125rem;
   line-height: 1.5;
   margin: 0;
+  text-align: justify;
+  text-align-last: left;
+  -webkit-text-align-last: left;
 }

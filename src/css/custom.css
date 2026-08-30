@@ -30,3 +30,11 @@
   --ifm-color-primary-contrast: #06203a;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Ensure main site content is left-justified for readability */
+.markdown,
+.theme-doc-markdown,
+.docItemContainer,
+.docs {
+  text-align: left;
+}
