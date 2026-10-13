@@ -11,13 +11,13 @@ I have been actively following the development of AI since 2023...
 
 {/* truncate */}
 
-At that time, I registered for and completed several courses that built upon the capabilities of the tools available then. Looking back, the state of AI development in 2023 now resembles the Stone Age of that technology.
+At that time, I completed several courses that built upon the capabilities of the tools available at that time. In retrospect, the level of AI development in 2023 now resembles the Stone Age of that technology.
 
-As a technical writer, I have noticed that many pundits have proclaimed that technical writers will be the first employees that high-tech companies will be able to remove from their headcount. By the same token, translators, marketing writers, Quality Assurance testers, and even developers will fall like a stack of dominoes, one by one.
+As a technical writer, I have noticed that many pundits have proclaimed that technical writers will be the first employees that high-tech companies will remove from their headcount. By the same token, translators, marketing writers, Quality Assurance testers, and even developers will fall like a stack of dominoes, one by one.
 
 Several companies have jumped on that bandwagon over the past three years and have paid a heavy price. It does not work like that at all.
 
-New technology needs to be embraced and viewed with a realistic approach. In parallel with the usherers of doom and gloom due to AI, some technical writers attempted to resist the winds of change, and quite frankly, degraded their value in the market to the level of "irrelevant." The "let's ignore the AI revolution and hope for the best" crowd is gradually disappearing from the professional landscape. A Luddite strategy is rarely likely to bear any fruit in the long run.
+New technology needs to be embraced and viewed with a realistic approach. In parallel with the ushers of doom and gloom due to AI, some technical writers attempted to resist the winds of change, and proceeded to degrade their value in the market to the level of "irrelevant." The "Let's ignore the AI revolution and hope for the best," crowd is gradually disappearing from the professional landscape. A Luddite strategy is rarely likely to bear any fruit in the long run.
 
 Since early 2025, I have been creating documentation on the GitHub web-based platform, using the Docusaurus open-source Static Site Generator (SSG) created by Meta, Visual Studio Code as the code editor, and Markdown as the docs-as-code lightweight markup language. Here's a definition of docs-as-code:
 
@@ -25,13 +25,13 @@ Since early 2025, I have been creating documentation on the GitHub web-based pla
 
 On its own, this is a powerful and flexible documentation paradigm. When used in partnership with AI, it becomes a veritable superpower. In 2025, I received a full-blown Microsoft Copilot license and started to benefit from Copilot's excellent integration with Visual Studio Code and GitHub.
 
-So how has AI made all the difference to the daily tasks of a technical writer?
+So how has AI made a major difference in the daily tasks of a technical writer?
 
 By automating routine maintenance tasks and pipeline protocols, AI enables technical writers to focus on research and content creation. Documentation sites vary in size; many have sizable legacy threads and patches running through them, and technical writers are recruited and replaced over the years. This documentation ecosystem thus diverges and converges over time, so smooth maintenance becomes a critical factor in terms of time spent *not* writing.
 
 There is nothing more disconcerting than the appearance of a bug in the documentation workflow a day before an important release. Yes, documentation tools do have showstoppers. In the pre-AI era, depending on whether you used open-source or purchased tools, you had to find solutions either from service providers' Service-Level Agreements (SLAs) or from online communities. Believe it or not, many service providers do not honor their SLAs, and online communities often lead you in the wrong direction with respect to what is not working in your specific system.
 
-Nowadays, your selected AI tool is your partner for faultfinding and correcting bugs and unwanted behaviors. This does not mean that you should ignore your service provider's best practices and instructions, or the wealth of information available on open-source discussion forums. It does mean, however, that you can get an immediate synopsis of several approaches that should solve the issue at hand, the advantages and disadvantages, and risks of each approach, and be able to make an intelligent and informed decision.
+Nowadays, your selected AI tool is your partner for faultfinding and correcting bugs and unwanted behaviors. This does not mean that you should ignore your service provider's best practices and instructions, or the wealth of information available on open-source discussion forums. It does mean, however, that you can get an immediate synopsis of several approaches that could potentially solve the issue at hand, their advantages/disadvantages, and risks pertaining to each approach; in short, the synopsis enables you to make an intelligent and informed decision.
 
 You can work with an AI tool that is natively integrated into your documentation ecosystem, or you can use an AI alternative tool in parallel. However, it makes sense to use Microsoft Copilot for a Microsoft-based documentation ecosystem, or Google Gemini for a Google-based documentation ecosystem. Nevertheless, you might discover that other AI offerings complement your work environment toolset.
 
@@ -41,7 +41,7 @@ We need to stop here and talk about Large Language Models (LLMs) and AI Agents. 
 * An **LLM** is the "brain" that processes and generates text.
 * An **AI Agent** is the "body" that uses that brain to perform actions and complete multi-step tasks independently.
 
-Within an AI platform, you may find that specific Large Language Models (LLMs) or specific AI Agents are viable for specific issues. You can either try them out, one by one, or ask your current agent to choose a model to work with, based on the task you are working on.
+Within an AI platform, you might find that specific Large Language Models (LLMs) or specific AI Agents are viable for specific issues. You can either try them out, one by one, or ask your current agent to choose a model to work with, based on the task you are working on.
 
 ### Comparison of LLMs and AI Agents
 
@@ -75,7 +75,7 @@ Within an AI platform, you may find that specific Large Language Models (LLMs) o
 
 ## Prompts
 
-Let's talk about prompts. Simply put, a **prompt** is any natural language input, such as a question, command, or block of text, that you provide to an AI tool to guide its response or generate a specific output. It is the instruction that tells the AI what to do.
+Simply put, a **prompt** is any natural language input, such as a question, command, or block of text, that you provide to an AI tool to guide its response or generate a specific output. It is the instruction that tells the AI what to do.
 
 The scope of a prompt needs to include instructions for everything you want your agent to do, as well as restrictions to apply to those instructions, because agents make assumptions and act on them. 
 
@@ -85,7 +85,7 @@ For this reason, building a prompt is an iterative process. The prompt may under
 
 1. **First part:** Describe the overall task and required outcome in a sentence.
 2. **Second part:** If necessary, break down the task into sequential steps and provide detailed instructions for each step. Otherwise, if a sequence does not apply, provide general instructions. Be as specific as possible to avoid ambiguity.
-3. **Third part:** List any restrictions or limitations to apply. Add anything you can think of.
+3. **Third part:** List as many restrictions or limitations you can think of.
 4. **Fourth part:** Request a report with the current (updated) prompt and a list of the completed tasks.
 
 > [!TIP]
@@ -93,17 +93,17 @@ For this reason, building a prompt is an iterative process. The prompt may under
 
 Always evaluate a prompt on a small section of your documentation before letting it run on many files. Check the results thoroughly. Anything can go wrong. 
 
-Here's an example from my experience: One of my prompts contained a script that impacted my content negatively, even though the script processed my content entirely according to my instructions. So what happened? The PowerShell script I was using for search and replace instructions in my markdown files caused Mojibake characters to flood the content. This led me to add a restriction to the prompt to run a Node.js script rather than a PowerShell script in all future tasks.
+Here's an example from my experience: One of my prompts contained a script that impacted my content negatively, even though the script processed my content entirely according to my instructions. So, what happened? The PowerShell script I used for searching and replacing specific terminology across my repository caused Mojibake characters to flood the content. This led me to add a restriction to the prompt to run a Node.js script rather than a PowerShell script in future tasks.
 
-There are occasions when one agent is not enough to perform a task involving many files. Your agent may initiate sub-agents. If you feel that the process is going very slowly, ask the agent to consider using sub-agents to make the task more efficient.
+There are occasions when one agent is not enough to perform a task involving many files. Your agent may initiate sub-agents. If you feel that the process is going very slowly, tell the agent to consider using sub-agents to make the task more efficient.
 
 If you are writing a prompt to collect information from all relevant internal resources to create a draft document for a new feature—and yes, this is now a bona fide strategy, particularly in SaaS applications—you can provide the template with headings, etc., in the prompt, or select from templates suggested by your AI tool. 
 
-Much of the resulting information might not be accurate or might be false. After all, your AI tool wants to impress you with descriptions of features and benefits. While some companies do this without a technical writer in the loop, there is no doubt that a professional writer is more likely to succeed in streamlining the content in an accurate manner and then integrating it in the documentation ecosystem efficiently. 
+Much of the resulting information might not be accurate or might be false. After all, your AI tool wants to impress you with descriptions of features and benefits. While some companies do this without a technical writer in the loop, there is no doubt that a professional writer is more likely to streamline the content in an accurate manner and then integrate it in the documentation ecosystem efficiently. 
 
-I did present such a first draft to a product manager who was amazed about the new capabilities of feature X, as described by the AI tool. We held a discussion with the relevant developers and discovered that only 70% of these capabilities were real, and that the rest were hallucinations, which might have been good ideas in relation to future expansion of the feature, but were certainly not relevant or existent in the current product about to be rolled out.
+I presented such a first draft to a product manager who was amazed about the new capabilities of feature X, as described by the AI tool. We held a discussion with the relevant developers and discovered that only 70% of these capabilities were real, and that the rest were hallucinations. These capabilities might have been good ideas for future expansion of the feature but were not relevant or existent in the product about to be rolled out.
 
-Here's another example: Over time, our documentation repository had become inconsistent with regards to the heading case. Some contributors have used title case and some had used sentence case. We decided to go with Chicago title case. In the AI tool era, this should require just a simple prompt to run through all the headings and fix or leave as required. However, it is not as simple as it sounds. The prompt needs to be very specific and include all the instructions and restrictions, and it needs to be tested on a small section of the repository before being applied more broadly.
+Here's another example: Over time, our documentation repository has become inconsistent with the heading case. Some contributors have used title case and some have used sentence case. We decided to go with the Chicago style title case. In the AI tool era, this requires just a simple prompt to run through all the headings and fix or leave as required. However, it is not as simple as it sounds. The prompt needs to be very specific and include all the instructions and restrictions, and must first be tested on small sections of the content before being applied globally.
 
 The prompt for the task was as follows:
 
@@ -174,15 +174,15 @@ If any files were skipped due to formatting issues, include those in the report 
 
 In the case of this example, the AI tool ran through all the markdown files in the specified directory and subdirectories, identified all H1, H2, H3, and H4 headings, and applied the Chicago title case rules while respecting the specified exceptions for product names and acronyms. The tool generated an exhaustive report summarizing the changes made to the headings and any exceptions that were encountered during the process.
 
-There were issues due to way the repository was structured, and the fact that some files were not properly formatted. The AI tool handled these exceptions by skipping over files that did not meet the criteria and logging them in the report for further review.
+There were issues due to way the repository was structured, and the fact that some files were not properly formatted. The AI tool handled these exceptions by skipping over files that did not meet the criteria and logging them into the report for further review.
 
 By the way, if you are wondering how to write a prompt for a task like this, you can ask your AI tool to write the prompt for you. You can provide it with the instructions and restrictions, and ask it to format them in a clear and concise manner. This can save you time and ensure that the prompt is well-structured and easy to understand.
 
 ## Conversations with Your AI Tool
 
-The best way to work with an AI tool is to have a conversation with it as if were human. This means that you can ask it questions, provide feedback, and give it additional instructions as needed.
+The best way to work with an AI tool is to have a conversation with it as if it were human. This means that you can ask it questions, provide feedback, and give it additional instructions as needed.
 
-Just like a human, it will not always do what you ask, and at times may take initiatives that conflict with what you actually want to do. While the AI tool is processing your request, it describes what it is doing, and what it understands from the request. After processing, the tool summarizes what has been done, and you can check the changes before accepting them. Read everything, and check your content before proceeding.
+Just like a human, it will not always do what you ask, and at times may take initiatives that conflict with what you actually want to do. While the AI tool is processing your request, it describes what it is doing, and what it understands from the request. After processing, the tool summarizes what has been done, and you can check the changes before accepting them. Read everything and check your content before proceeding.
 I have spent a lot of time arguing with AI tools, but that is part of the process. After all, AI tools cannot replace technical writers. Rather, they empower us to do more.
 
 Example conversation:
@@ -211,7 +211,7 @@ Be aware that an AI tool will try different strategies to get to a solution, eve
 
 If you show impatience by writing short and terse responses, the tool may write (while processing) “the user is losing patience and I fully understand. I apologize and ...”
 
-Only once did an AI tool give up and ask me to search for expert advice. Be aware that there may not be any available documented solution to your problem.
+Only once did an AI tool give up and ask me to search for expert advice. Be aware that there might not be any available documented solution to your problem.
 
 If you get into such a loop, get the tool to print out the current full prompt as it stands in this session. There may be some clues to why the AI tool misinterpreted what you initially wanted. In my experience, the more iterations needed by the AI tool, the lower the chance of solving the problem, especially if solutions involve making changes to configuration files. Sometimes you just need to start over.
 
